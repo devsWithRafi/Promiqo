@@ -1,9 +1,9 @@
-import { ImageType } from '@/@types/types';
 import { ArrowDownToLine, Heart, MessageSquare, Share } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { PostType } from '@/@types/types';
 
-const ImageEngagement = ({ image }: { image: ImageType }) => {
+const ImageEngagement = ({ image }: { image: PostType }) => {
   return (
     <Card className="w-full min-h-15">
       <CardContent className="flex justify-evenly gap-3 items-center h-full w-full p-0 px-4">

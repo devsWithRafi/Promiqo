@@ -1,10 +1,10 @@
 'use client';
 
-import { ImageType } from '@/@types/types';
+import { PostType } from '@/@types/types';
 import ImageCard from '@/components/image-content/ImageCard';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 
-const ImageLists = ({ imageData }: { imageData: ImageType[] }) => {
+const ImageLists = ({ imageData }: { imageData: PostType[] }) => {
   return (
     <ResponsiveMasonry
       columnsCountBreakPoints={{
@@ -19,7 +19,7 @@ const ImageLists = ({ imageData }: { imageData: ImageType[] }) => {
     >
       <Masonry gutter="10px">
         {imageData.map((item) => (
-          <ImageCard key={item.id} image={item} />
+          <ImageCard key={item._id} image={item} />
         ))}
       </Masonry>
     </ResponsiveMasonry>

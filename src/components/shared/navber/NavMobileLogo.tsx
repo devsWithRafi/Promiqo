@@ -1,9 +1,12 @@
 import { assets } from '@/assets/assets';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
-import React from 'react';
 
-const NavMobileLogo = ({ className, ...props }) => {
+interface iProps {
+  className?: string;
+}
+
+const NavMobileLogo = ({ className, ...props }: iProps) => {
   return (
     <Image
       {...props}
